@@ -24,7 +24,7 @@ func (l *LinkedList) add(element int, position int) {
 	if position == 0 {
 		l.firstNode = &Node{
 			value:    element,
-			nextNode: currentNode.nextNode,
+			nextNode: currentNode,
 		}
 		l.size++
 		return
